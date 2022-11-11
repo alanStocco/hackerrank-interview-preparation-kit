@@ -1,2 +1,12 @@
-# HackerRank Interview Preparation Kit (1/69 solved)
+# HackerRank Interview Preparation Kit (3/69 solved)
 Solutions to the [HackerRank Interview Preparation Kit](https://www.hackerrank.com/interview/interview-preparation-kit).
+
+Python 3 (October 2022- Ongoing).
+
+- [x] Arrays (1/5)
+  - [x] [2D Array - DS](Arrays/2d-array-ds.py) 
+  - [x] [Array Manipulation](Arrays/array_-_manipulation.py)
+  - [x] [Array:Left Rotation](Arrays/array_left_rotation.py)
+  - [] [New Year Chaos](Arrays/new_year_chaos.py)
+  <!-- - [] [Minimum Swaps 2](Arrays/.py) -->
+
