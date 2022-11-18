@@ -30,17 +30,36 @@ def minimumBribes_bf(q):
         min_bribes = min_bribes + counter_bribes
     return min_bribes    
 
-# TODO better time complexity
-# def minimumBribes_v2(q):
-#     return None
+# Time Complexity O(n) linear
+def minimumBribes(Q):
+    # Start end q, if q[i] != i  means that last person bribe and is in position i-1 or i-2. 
+    # If is in left of position i-2 is too chaotic
+    moves = 0 
+    Q = [P-1 for P in Q]    
+    for i,P in enumerate(Q):
+        # print(f"i: {i} - P: {P}")
+        if P - i > 2: # person is too far away from initial position so cheated more than two person
+            print("Too chaotic")
+            return
+        # print(f"P-1 val: {P-1} e i: {i}")
+        # Given position i in the queue I see the two persons just before in position i-2 and i-1, only if
+        # person in position i is not in the initial position(so have brided someone)
+        for j in range(max(P-1,0),i):
+            if Q[j] > P:
+                moves += 1
+            # if i==4:
+            #     print(f"j: {j} Q[j]:{Q[j]}  --- P-1 val: {P-1} e i: {i} , moves: {moves}")
+    # print(moves)
+    return moves
 
 if __name__ == '__main__':
     t = 2
     n = 5
     
     q = [2,1,5,3,4] # res 3
-    q = [2,5,1,3,4] # res Too chaotic
-    q = [1,2,5,3,4,7,8,6]  # res 8
-    res = minimumBribes_bf(q)
+    # q = [2,5,1,3,4] # res Too chaotic
+    # q = [1,2,5,3,4,7,8,6]  # res 8
+    # q = [1,2,5,3,7,8,6,4] # res 7
+    res = minimumBribes(q)
     print("Result : {}".format(res))
     

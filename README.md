@@ -7,6 +7,6 @@ Python 3 (October 2022- Ongoing).
   - [x] [2D Array - DS](Arrays/2d-array-ds.py) 
   - [x] [Array Manipulation](Arrays/array_manipulation.py)
   - [x] [Array:Left Rotation](Arrays/arrays_left_rotation.py)
-  - [] [New Year Chaos](Arrays/new_year_chaos.py)
+  - [x] [New Year Chaos](Arrays/new_year_chaos.py)
   <!-- - [] [Minimum Swaps 2](Arrays/.py) -->
 
